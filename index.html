@@ -1,12 +1,12 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
+  <meta charset="UTF-8">
+  <title>Code Quiz Challenge</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
@@ -23,19 +23,33 @@
 </head>
 
 <body>
+  <header>
+    <h1 class="page-title">Coding Quiz</h1>
+    <p>Click the button below to begin the quiz! The timer will run when you click start. Each correct answer adds time, and each incorrect answer will remove time from the countdown.</p>
+    <button id="myBtn" class="btn">Start Quiz!</button>
+  </header>
+  <main class="page-content">
+  <Section>
+  </Section>
+    <div id="myModal" class="modal">
+      <!-- Trigger/Open The Modal -->
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <section class="task-list-wrapper">
+          <h2 class="list-title">Question "1"</h2>
+          <h2 id="testStatus"></h2>
+          <div id="test"></div>
+        </section>
+      </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  </div>
+  </main>
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
